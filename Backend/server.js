@@ -7,6 +7,12 @@ cloudinary.v2.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
+console.log(process.env.PORT)
+
+console.log("COOKIE_EXPIRE:", process.env.COOKIE_EXPIRE);
+
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
+
 app.listen(process.env.PORT, ()=>{
     console.log(`Server listening on port ${process.env.PORT}`);
 });

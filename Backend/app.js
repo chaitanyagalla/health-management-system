@@ -10,9 +10,11 @@ import messageRouter from "./router/messageRouter.js"
 import appointmentRouter from "./router/appointmentRouter.js"
 
 const app = express();
+import dotenv from "dotenv";
+dotenv.config({ path: "./config/config.env" });
 
-
-config({ path: "./config/config.env" })
+// 
+// config({ path: "./config/config.env" })
 
 app.use(cors(
     {
